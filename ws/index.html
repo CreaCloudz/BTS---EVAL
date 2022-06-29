@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/agentWeb.js"></script>
+  
+</head>
+
+<body>
+    <section>
+        <h1>Page de test des web services RENASS</h1>
+
+        <h2>Le dernier séisme: <strong>WSTempsReel.php</strong></h2>
+        <div id="dernier"></div>
+
+        <h2>Les 10 derniers séismes: <strong>WS10Derniers.php</strong></h2>
+        <p>Pour effacer des entrées utiliser <a href="http://172.17.1.20/phpmyadmin">phpmyadmin</a></p>
+        <table id="tableau10derniers">
+            <tr>
+                <th>Date et heure</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Magnitude</th>
+                <th>Profondeur</th>
+                <th>Nombre de stations</th>
+                <th>Ville</th>
+                <th>Distance</th>
+            </tr>
+
+        </table>
+
+
+        <h2>Ajout d'un séisme simple par méthode GET <strong>WSAjouterSeismeSimpleGET.php</strong> et par méthode POST <strong>WSAjouterSeismeSimplePOST.php</strong></h2>
+
+        <form onclick="return false">
+            <label>Magnitude</label>
+            <input type="text" id="magnSeule">
+            <button id="getSimple">Envoyer par GET</button>
+             <button id="postSimple">Envoyer par POST</button>
+
+
+        </form>
+
+        <h2>Ajout d'un séisme complet par méthode GET <strong>WSAjouterSeismeGET.php</strong> et par méthode POST <strong>WSAjouterSeismePOST.php</strong></h2>
+        <form onclick="return false">
+            <label>Date <em>yyyy-mm-dd</em></label>
+            <input type="text" id="date"><br>
+            <label>Heure <em>hh:mm:ss</em></label>
+            <input type="text" id="heure"><br>
+            <label>Latitude </label>
+            <input type="text" id="lat"><br>
+            <label>Longitude</label>
+            <input type="text" id="long"><br>
+            <label>Magnitude</label>
+            <input type="text" id="magn"><br>
+            <label>Profondeur</label>
+            <input type="text" id="prof"><br>
+            <label>Nombre de stations</label>
+            <input type="text" id="nbeStations"><br>
+            <label>Ville</label>
+            <input type="text" id="ville"><br>    
+            <label>Distance</label>
+            <input type="text" id="distance">
+             <button id="get">Envoyer par GET</button>
+             <button id="post">Envoyer par POST</button>
+        </form>
+        
+        
+
+    </section>
+    <footer>BTS SN</footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+
+h1 {
+   font-weight: normal;
+    color: #BBE;
+}
+
+body {
+    width:1000px;
+    margin:auto;
+    background: #f2f2f2;
+    opacity:0.9;
+    padding:20px;
+}
+
+html {
+    font-family: "Century Gothic";
+	background: url(photo.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    padding: 5px;
+     background: #346681;
+    color:#f2f2f2;
+    
+}
+table {
+    margin: auto;
+    
+}
+td {
+    background: white;
+    text-align: center;
+    width:100px;
+    
+}
+th {
+    background: #84B7E9;
+    color:#f2f2f2;
+}
